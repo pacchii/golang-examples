@@ -9,5 +9,5 @@ func Place() string {
 }
 
 func TagVersion() string {
-	return "v1.0"
+	return "v1.2"
 }
