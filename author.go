@@ -7,3 +7,7 @@ func AuthorName() string {
 func Place() string {
 	return "Bangalore, KA"
 }
+
+func TagVersion() string {
+	return "v1.0"
+}
