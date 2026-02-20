@@ -1,4 +1,4 @@
-package main
+package golangexamples
 
 func AuthorName() string {
 	return "Prashant G"
