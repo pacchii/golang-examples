@@ -3,13 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/pacchii/golang-examples/slice"
+	"github.com/pacchii/golang-examples/maps"
 )
 
 func main() {
 
 	//array.ArrayExample()
-	slice.SliceExample()
+	//slice.SliceExample()
+
+	maps.MapsExample()
 
 	//fmt.Println(nextslicecap(513, 512))
 

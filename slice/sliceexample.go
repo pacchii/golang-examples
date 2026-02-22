@@ -168,9 +168,12 @@ func SliceExample() {
 	a := []int{1, 2, 3, 4}
 	fmt.Println(a, len(a), cap(a)) //[1 2 3 4] 4 4
 	b := a
+	c := make([]int, len(a), cap(a))
+	copy(c, a)
 	fmt.Println(b, len(b), cap(b)) //[1 2 3 4] 4 4
 	a[2] = 6
 	fmt.Println(a, len(a), cap(a)) //[1 2 6 4] 4 4
 	fmt.Println(b, len(b), cap(b)) //[1 2 6 4] 4 4
+	fmt.Println(c, len(c), cap(c))
 
 }
