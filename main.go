@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/pacchii/golang-examples/maps"
+	_5_structs "github.com/pacchii/golang-examples/05_structs"
 )
 
 func main() {
@@ -11,7 +11,9 @@ func main() {
 	//array.ArrayExample()
 	//slice.SliceExample()
 
-	maps.MapsExample()
+	//maps.MapsExample()
+
+	_5_structs.StructExample()
 
 	//fmt.Println(nextslicecap(513, 512))
 
