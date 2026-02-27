@@ -5,7 +5,92 @@ import "fmt"
 func FunctionExamples() {
 	variadicFunc()
 	deferExample()
+	ananymous()
+	returningFunc()
+	callback()
+	closure()
+	recursion()
+}
 
+func recursion() {
+	fmt.Println(factorial(5))
+	fmt.Println(normFactorial(5))
+}
+
+func factorial(n int) int {
+	if n == 1 {
+		return 1
+	}
+	return n * factorial(n-1)
+}
+
+func normFactorial(n int) int {
+	total := 1
+	for i := 1; i <= n; i++ {
+		total *= i
+	}
+	return total
+}
+
+func closure() {
+
+	f := incrementor()
+	fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
+	fmt.Println(f())
+}
+
+func incrementor() func() int {
+	x := 0
+	return func() int {
+		x++
+		return x
+	}
+}
+
+func callback() {
+	doMathOperation(2, 3, add)
+	doMathOperation(6, 2, subtarct)
+}
+
+func doMathOperation(a int, b int, f func(int, int) int) int {
+	return f(a, b)
+}
+
+func add(a int, b int) int {
+	return a + b
+}
+
+func subtarct(a int, b int) int {
+	return a - b
+}
+
+func returningFunc() {
+
+	f := bar()
+
+	fmt.Printf("%T\n", f)   //func() int
+	fmt.Printf("%T\n", bar) //func() func() int
+
+}
+
+func bar() func() int {
+	return func() int {
+		return 33
+	}
+}
+
+func ananymous() {
+
+	func() {
+		fmt.Println("Hello Ananymous")
+	}()
+
+	func(s string) {
+		fmt.Println("Ananymous with parameter", s)
+	}("Hello World")
 }
 
 func variadicFunc() {

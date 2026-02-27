@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	_6_functions "github.com/pacchii/golang-examples/06_functions"
+	_8_interfaces "github.com/pacchii/golang-examples/08_interfaces"
 )
 
 func main() {
@@ -14,7 +14,10 @@ func main() {
 	//maps.MapsExample()
 
 	//_5_structs.StructExample()
-	_6_functions.FunctionExamples()
+	//_6_functions.FunctionExamples()
+
+	_8_interfaces.StringerExample()
+
 	//fmt.Println(nextslicecap(513, 512))
 
 	/*
