@@ -177,3 +177,16 @@ func SliceExample() {
 	fmt.Println(c, len(c), cap(c))
 
 }
+
+func PassByValueOrReference() {
+	var s []int
+
+	s = append(s, 1, 2, 3, 4, 5)
+	fmt.Println(s) //[1 2 3 4 5]
+	deltaChange(s)
+	fmt.Println(s) //[1 2 20 4 5]
+}
+
+func deltaChange(s []int) {
+	s[2] = 20
+}

@@ -15,6 +15,11 @@ type Address struct {
 	Pincode   int
 }
 
+type Student struct {
+	name string
+	age  int
+}
+
 func StructExample() {
 
 	a := Address{"#731, 60th Cross, 5th Block", "Near Bashyam Circle Rajajinagar Bangalore", 560010}
@@ -26,6 +31,20 @@ func StructExample() {
 	AmbiguityExample()
 	AnanymousStruct()
 
+}
+
+func PassByValueOrReference() {
+	var s Student
+	s.name = "Prashant"
+	s.age = 23
+
+	fmt.Println(s) //{Prashant 23}
+	deltaChange(s)
+	fmt.Println(s) //{Prashant 23}
+}
+
+func deltaChange(s Student) {
+	s.name = "ALTERED"
 }
 
 func AnanymousStruct() {

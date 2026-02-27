@@ -68,6 +68,21 @@ func MapsExample() {
 
 	fmt.Println("-----------------------CountWordsinFile() --------------")
 	CountWordsinFile()
+
+	PassByValueOrReference()
+}
+
+func PassByValueOrReference() {
+	m := make(map[string]int)
+	m["Prashant"] = 34
+	fmt.Println(m) //map[Prashant:34]
+	deltaChange(m)
+	fmt.Println(m) //map[Prashant:23]
+
+}
+
+func deltaChange(m map[string]int) {
+	m["Prashant"] = 23
 }
 
 func CountWordsinSlice() {
