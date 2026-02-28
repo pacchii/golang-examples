@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	_8_interfaces "github.com/pacchii/golang-examples/08_interfaces"
+	"github.com/pacchii/golang-examples/13_concurrency"
 )
 
 func main() {
@@ -16,7 +16,9 @@ func main() {
 	//_5_structs.StructExample()
 	//_6_functions.FunctionExamples()
 
-	_8_interfaces.StringerExample()
+	//_8_interfaces.StringerExample()
+
+	_3_concurrency.AtomicExample()
 
 	//fmt.Println(nextslicecap(513, 512))
 
