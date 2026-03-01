@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/pacchii/golang-examples/13_concurrency"
 )
 
 func main() {
@@ -18,8 +16,10 @@ func main() {
 
 	//_8_interfaces.StringerExample()
 
-	_3_concurrency.AtomicExample()
+	//_3_concurrency.AtomicExample()
 
+	//_4_channels.FanOutExample()
+	DeferExample()
 	//fmt.Println(nextslicecap(513, 512))
 
 	/*
